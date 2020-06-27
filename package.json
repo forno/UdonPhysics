@@ -1,0 +1,16 @@
+{
+  "name": "link.xmaho.vrc.sdk3.udon",
+  "version": "0.0.1-preview",
+  "displayName": "x.maho Udon utility",
+  "description": "x.maho Utility for Udon of VRChat SDK3",
+  "unity": "2018.4",
+  "keywords": [
+    "vrchat",
+    "vrc"
+  ],
+  "author": {
+    "name": "FORNO",
+    "email": "forno@xmaho.link",
+    "url": "https://github.com/forno"
+  }
+}
