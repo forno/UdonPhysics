@@ -15,32 +15,32 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 0610bad455c49d844b5557851c422852,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export waterCollider\r\n    .export density\r\n
-    \   .export udonPhysics\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64,
-    null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n    waterCollider:
-    %UnityEngineCollider, null\r\n    density: %SystemSingle, null\r\n    udonPhysics:
-    %VRCUdonUdonBehaviour, null\r\n    onTriggerEnterOther: %UnityEngineCollider,
-    null\r\n    onTriggerExitOther: %UnityEngineCollider, null\r\n    onTriggerStayOther:
-    %UnityEngineCollider, null\r\n    __0_other_Collider: %UnityEngineCollider, null\r\n
-    \   __1_other_Collider: %UnityEngineCollider, null\r\n    __2_other_Collider:
-    %UnityEngineCollider, null\r\n    __0_r_Rigidbody: %UnityEngineRigidbody, null\r\n
-    \   __1_r_Rigidbody: %UnityEngineRigidbody, null\r\n    __0_radius_Single: %SystemSingle,
-    null\r\n    __0_t_Single: %SystemSingle, null\r\n    __0_v_Single: %SystemSingle,
-    null\r\n    __0_type_Type: %SystemType, null\r\n    __0_const_intnl_SystemSingle:
+    \   .export drag\r\n    .export angularDrag\r\n    .export udonPhysics\r\n\r\n
+    \   __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName:
+    %SystemString, null\r\n    waterCollider: %UnityEngineCollider, null\r\n    angularDrag:
+    %SystemSingle, null\r\n    density: %SystemSingle, null\r\n    drag: %SystemSingle,
+    null\r\n    udonPhysics: %VRCUdonUdonBehaviour, null\r\n    onTriggerEnterOther:
+    %UnityEngineCollider, null\r\n    onTriggerExitOther: %UnityEngineCollider, null\r\n
+    \   onTriggerStayOther: %UnityEngineCollider, null\r\n    __0_other_Collider:
+    %UnityEngineCollider, null\r\n    __1_other_Collider: %UnityEngineCollider, null\r\n
+    \   __2_other_Collider: %UnityEngineCollider, null\r\n    __0_r_Rigidbody: %UnityEngineRigidbody,
+    null\r\n    __1_r_Rigidbody: %UnityEngineRigidbody, null\r\n    __0_radius_Single:
+    %SystemSingle, null\r\n    __0_t_Single: %SystemSingle, null\r\n    __0_v_Single:
+    %SystemSingle, null\r\n    __0_type_Type: %SystemType, null\r\n    __0_const_intnl_SystemSingle:
     %SystemSingle, null\r\n    __1_const_intnl_SystemSingle: %SystemSingle, null\r\n
     \   __0_const_intnl_SystemString: %SystemString, null\r\n    __1_const_intnl_SystemString:
     %SystemString, null\r\n    __2_const_intnl_SystemString: %SystemString, null\r\n
     \   __3_const_intnl_SystemString: %SystemString, null\r\n    __4_const_intnl_SystemString:
     %SystemString, null\r\n    __5_const_intnl_SystemString: %SystemString, null\r\n
-    \   __6_const_intnl_SystemString: %SystemString, null\r\n    __0_const_intnl_SystemType:
-    %SystemType, null\r\n    __1_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_SystemUInt32:
-    %SystemUInt32, null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    \   __0_const_intnl_SystemType: %SystemType, null\r\n    __1_const_intnl_SystemType:
+    %SystemType, null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n
+    \   __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
     \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_intnl_UnityEngineBounds:
     %UnityEngineBounds, null\r\n    __1_intnl_UnityEngineBounds: %UnityEngineBounds,
     null\r\n    __2_intnl_UnityEngineBounds: %UnityEngineBounds, null\r\n    __3_intnl_UnityEngineBounds:
     %UnityEngineBounds, null\r\n    __0_intnl_SystemObject: %SystemObject, null\r\n
     \   __1_intnl_SystemObject: %SystemObject, null\r\n    __2_intnl_SystemObject:
-    %SystemObject, null\r\n    __3_intnl_SystemObject: %SystemObject, null\r\n    __4_intnl_SystemObject:
     %SystemObject, null\r\n    __0_intnl_UnityEngineRigidbody: %UnityEngineRigidbody,
     null\r\n    __1_intnl_UnityEngineRigidbody: %UnityEngineRigidbody, null\r\n    __0_intnl_SystemSingle:
     %SystemSingle, null\r\n    __1_intnl_SystemSingle: %SystemSingle, null\r\n    __10_intnl_SystemSingle:
@@ -50,9 +50,7 @@ MonoBehaviour:
     %SystemSingle, null\r\n    __17_intnl_SystemSingle: %SystemSingle, null\r\n    __18_intnl_SystemSingle:
     %SystemSingle, null\r\n    __19_intnl_SystemSingle: %SystemSingle, null\r\n    __2_intnl_SystemSingle:
     %SystemSingle, null\r\n    __20_intnl_SystemSingle: %SystemSingle, null\r\n    __21_intnl_SystemSingle:
-    %SystemSingle, null\r\n    __22_intnl_SystemSingle: %SystemSingle, null\r\n    __23_intnl_SystemSingle:
-    %SystemSingle, null\r\n    __24_intnl_SystemSingle: %SystemSingle, null\r\n    __25_intnl_SystemSingle:
-    %SystemSingle, null\r\n    __26_intnl_SystemSingle: %SystemSingle, null\r\n    __3_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __22_intnl_SystemSingle: %SystemSingle, null\r\n    __3_intnl_SystemSingle:
     %SystemSingle, null\r\n    __4_intnl_SystemSingle: %SystemSingle, null\r\n    __5_intnl_SystemSingle:
     %SystemSingle, null\r\n    __6_intnl_SystemSingle: %SystemSingle, null\r\n    __7_intnl_SystemSingle:
     %SystemSingle, null\r\n    __8_intnl_SystemSingle: %SystemSingle, null\r\n    __9_intnl_SystemSingle:
@@ -71,16 +69,18 @@ MonoBehaviour:
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # public class
     SimpleBuoyancyVolume : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         #
     public Collider waterCollider;\r\n        \r\n         # public float density
-    = 1000;\r\n        \r\n         # public UdonPhysicsSystem udonPhysics;\r\n        \r\n
-    \        # private void OnTriggerEnter(Collider other)\r\n    .export _onTriggerEnter\r\n
-    \       \r\n    _onTriggerEnter:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, onTriggerEnterOther\r\n        PUSH, __0_other_Collider\r\n        COPY\r\n
-    \       \r\n         # {\r\n        \r\n         # if (other.GetType() == typeof(CharacterController))\r\n
+    = 1000;\r\n        \r\n         # public float drag = 5;\r\n        \r\n         #
+    public float angularDrag = 2;\r\n        \r\n         # public UdonPhysicsSystem
+    udonPhysics;\r\n        \r\n         # private void OnTriggerEnter(Collider other)\r\n
+    \   .export _onTriggerEnter\r\n        \r\n    _onTriggerEnter:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, onTriggerEnterOther\r\n
+    \       PUSH, __0_other_Collider\r\n        COPY\r\n        \r\n         # {\r\n
+    \       \r\n         # if (other.GetType() == typeof(CharacterController))\r\n
     \       PUSH, __0_other_Collider\r\n        PUSH, __0_intnl_SystemType\r\n        EXTERN,
     \"UnityEngineCollider.__GetType__SystemType\"\r\n        PUSH, __0_intnl_SystemType\r\n
     \       PUSH, __0_const_intnl_SystemType\r\n        PUSH, __0_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemType.__op_Equality__SystemType_SystemType__SystemBoolean\"\r\n
-    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000000C8\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000000E8\r\n
     \       \r\n         # {\r\n        \r\n         # Networking.LocalPlayer.SetPlayerTag(udonPhysics.volumeTagName,
     \"swim\");\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN,
     \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n        PUSH,
@@ -90,6 +90,9 @@ MonoBehaviour:
     \       COPY\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH,
     __1_intnl_SystemString\r\n        PUSH, __1_const_intnl_SystemString\r\n        EXTERN,
     \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n
+    \       \r\n         # udonPhysics.drag = drag;\r\n        PUSH, udonPhysics\r\n
+    \       PUSH, __2_const_intnl_SystemString\r\n        PUSH, drag\r\n        EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
     \        # private void OnTriggerStay(Collider other)\r\n    .export _onTriggerStay\r\n
@@ -100,7 +103,7 @@ MonoBehaviour:
     \"UnityEngineCollider.__GetType__SystemType\"\r\n        PUSH, __1_intnl_SystemType\r\n
     \       PUSH, __1_const_intnl_SystemType\r\n        PUSH, __1_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemType.__op_Equality__SystemType_SystemType__SystemBoolean\"\r\n
-    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000005B0\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000560\r\n
     \       \r\n         # {\r\n        \r\n         # var radius = other.bounds.extents.y;\r\n
     \       PUSH, __1_other_Collider\r\n        PUSH, __0_intnl_UnityEngineBounds\r\n
     \       EXTERN, \"UnityEngineCollider.__get_bounds__UnityEngineBounds\"\r\n        PUSH,
@@ -156,25 +159,17 @@ MonoBehaviour:
     \       \r\n         # var r = other.attachedRigidbody;\r\n        PUSH, __1_other_Collider\r\n
     \       PUSH, __0_intnl_UnityEngineRigidbody\r\n        EXTERN, \"UnityEngineCollider.__get_attachedRigidbody__UnityEngineRigidbody\"\r\n
     \       PUSH, __0_intnl_UnityEngineRigidbody\r\n        PUSH, __0_r_Rigidbody\r\n
-    \       COPY\r\n        \r\n         # r.drag = udonPhysics.swimDrag;\r\n        PUSH,
-    udonPhysics\r\n        PUSH, __2_const_intnl_SystemString\r\n        PUSH, __1_intnl_SystemObject\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __19_intnl_SystemSingle\r\n
-    \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
-    __0_r_Rigidbody\r\n        PUSH, __19_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineRigidbody.__set_drag__SystemSingle__SystemVoid\"\r\n
-    \       \r\n         # r.angularDrag = udonPhysics.swimAngularDrag;\r\n        PUSH,
-    udonPhysics\r\n        PUSH, __3_const_intnl_SystemString\r\n        PUSH, __2_intnl_SystemObject\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, __2_intnl_SystemObject\r\n        PUSH, __21_intnl_SystemSingle\r\n
-    \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
-    __0_r_Rigidbody\r\n        PUSH, __21_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineRigidbody.__set_angularDrag__SystemSingle__SystemVoid\"\r\n
+    \       COPY\r\n        \r\n         # r.drag = drag;\r\n        PUSH, __0_r_Rigidbody\r\n
+    \       PUSH, drag\r\n        EXTERN, \"UnityEngineRigidbody.__set_drag__SystemSingle__SystemVoid\"\r\n
+    \       \r\n         # r.angularDrag = angularDrag;\r\n        PUSH, __0_r_Rigidbody\r\n
+    \       PUSH, angularDrag\r\n        EXTERN, \"UnityEngineRigidbody.__set_angularDrag__SystemSingle__SystemVoid\"\r\n
     \       \r\n         # r.AddForceAtPosition(-Physics.gravity * (v * density),
     other.bounds.center);\r\n        PUSH, __3_intnl_UnityEngineVector3\r\n        EXTERN,
     \"UnityEnginePhysics.__get_gravity__UnityEngineVector3\"\r\n        PUSH, __3_intnl_UnityEngineVector3\r\n
     \       PUSH, __4_intnl_UnityEngineVector3\r\n        EXTERN, \"UnityEngineVector3.__op_UnaryNegation__UnityEngineVector3__UnityEngineVector3\"\r\n
-    \       PUSH, __0_v_Single\r\n        PUSH, density\r\n        PUSH, __22_intnl_SystemSingle\r\n
+    \       PUSH, __0_v_Single\r\n        PUSH, density\r\n        PUSH, __18_intnl_SystemSingle\r\n
     \       EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n
-    \       PUSH, __4_intnl_UnityEngineVector3\r\n        PUSH, __22_intnl_SystemSingle\r\n
+    \       PUSH, __4_intnl_UnityEngineVector3\r\n        PUSH, __18_intnl_SystemSingle\r\n
     \       PUSH, __5_intnl_UnityEngineVector3\r\n        EXTERN, \"UnityEngineVector3.__op_Multiply__UnityEngineVector3_SystemSingle__UnityEngineVector3\"\r\n
     \       PUSH, __1_other_Collider\r\n        PUSH, __3_intnl_UnityEngineBounds\r\n
     \       EXTERN, \"UnityEngineCollider.__get_bounds__UnityEngineBounds\"\r\n        PUSH,
@@ -193,34 +188,34 @@ MonoBehaviour:
     \       PUSH, __0_type_Type\r\n        COPY\r\n        \r\n         # if (type
     == typeof(SphereCollider))\r\n        PUSH, __0_type_Type\r\n        PUSH, __1_const_intnl_SystemType\r\n
     \       PUSH, __2_intnl_SystemBoolean\r\n        EXTERN, \"SystemType.__op_Equality__SystemType_SystemType__SystemBoolean\"\r\n
-    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000710\r\n
+    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000006C0\r\n
     \       \r\n         # {\r\n        \r\n         # var r = other.attachedRigidbody;\r\n
     \       PUSH, __2_other_Collider\r\n        PUSH, __1_intnl_UnityEngineRigidbody\r\n
     \       EXTERN, \"UnityEngineCollider.__get_attachedRigidbody__UnityEngineRigidbody\"\r\n
     \       PUSH, __1_intnl_UnityEngineRigidbody\r\n        PUSH, __1_r_Rigidbody\r\n
     \       COPY\r\n        \r\n         # r.drag = udonPhysics.normalDrag;\r\n        PUSH,
-    udonPhysics\r\n        PUSH, __4_const_intnl_SystemString\r\n        PUSH, __3_intnl_SystemObject\r\n
+    udonPhysics\r\n        PUSH, __3_const_intnl_SystemString\r\n        PUSH, __1_intnl_SystemObject\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, __3_intnl_SystemObject\r\n        PUSH, __24_intnl_SystemSingle\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __20_intnl_SystemSingle\r\n
     \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
-    __1_r_Rigidbody\r\n        PUSH, __24_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineRigidbody.__set_drag__SystemSingle__SystemVoid\"\r\n
+    __1_r_Rigidbody\r\n        PUSH, __20_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineRigidbody.__set_drag__SystemSingle__SystemVoid\"\r\n
     \       \r\n         # r.angularDrag = udonPhysics.normalAngularDrag;\r\n        PUSH,
-    udonPhysics\r\n        PUSH, __5_const_intnl_SystemString\r\n        PUSH, __4_intnl_SystemObject\r\n
+    udonPhysics\r\n        PUSH, __4_const_intnl_SystemString\r\n        PUSH, __2_intnl_SystemObject\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, __4_intnl_SystemObject\r\n        PUSH, __26_intnl_SystemSingle\r\n
+    \       PUSH, __2_intnl_SystemObject\r\n        PUSH, __22_intnl_SystemSingle\r\n
     \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
-    __1_r_Rigidbody\r\n        PUSH, __26_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineRigidbody.__set_angularDrag__SystemSingle__SystemVoid\"\r\n
-    \       JUMP, 0x000007A4\r\n        \r\n         # else if (type == typeof(CharacterController))\r\n
+    __1_r_Rigidbody\r\n        PUSH, __22_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineRigidbody.__set_angularDrag__SystemSingle__SystemVoid\"\r\n
+    \       JUMP, 0x00000754\r\n        \r\n         # else if (type == typeof(CharacterController))\r\n
     \       PUSH, __0_type_Type\r\n        PUSH, __0_const_intnl_SystemType\r\n        PUSH,
     __3_intnl_SystemBoolean\r\n        EXTERN, \"SystemType.__op_Equality__SystemType_SystemType__SystemBoolean\"\r\n
-    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000007A4\r\n
+    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000754\r\n
     \       \r\n         # {\r\n        \r\n         # Networking.LocalPlayer.SetPlayerTag(udonPhysics.volumeTagName,
     \"\");\r\n        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
     \       PUSH, udonPhysics\r\n        PUSH, __0_const_intnl_SystemString\r\n        PUSH,
-    __3_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, __3_intnl_SystemObject\r\n        PUSH, __3_intnl_SystemString\r\n
+    __1_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __3_intnl_SystemString\r\n
     \       COPY\r\n        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH,
-    __3_intnl_SystemString\r\n        PUSH, __6_const_intnl_SystemString\r\n        EXTERN,
+    __3_intnl_SystemString\r\n        PUSH, __5_const_intnl_SystemString\r\n        EXTERN,
     \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
@@ -387,1408 +382,1464 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 200
-      endSourceChar: 238
+      endSourceChar: 221
       line: 8
+      lineChar: 11
+      spanCodeSection: "float drag = 5;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 221
+      endSourceChar: 228
+      line: 9
+      lineChar: 4
+      spanCodeSection: 'public '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 228
+      endSourceChar: 228
+      line: 9
+      lineChar: 11
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 228
+      endSourceChar: 256
+      line: 9
+      lineChar: 11
+      spanCodeSection: "float angularDrag = 2;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 256
+      endSourceChar: 263
+      line: 10
+      lineChar: 4
+      spanCodeSection: 'public '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 263
+      endSourceChar: 263
+      line: 10
+      lineChar: 11
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 263
+      endSourceChar: 301
+      line: 10
       lineChar: 11
       spanCodeSection: "UdonPhysicsSystem udonPhysics;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 238
-      endSourceChar: 266
-      line: 10
+      startSourceChar: 301
+      endSourceChar: 329
+      line: 12
       lineChar: 4
       spanCodeSection: private void OnTriggerEnter(
     - startInstruction: 0
       endInstruction: 27
-      startSourceChar: 266
-      endSourceChar: 287
-      line: 10
+      startSourceChar: 329
+      endSourceChar: 350
+      line: 12
       lineChar: 32
       spanCodeSection: "Collider other)\r\n    "
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 287
-      endSourceChar: 298
-      line: 11
+      startSourceChar: 350
+      endSourceChar: 361
+      line: 13
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 298
-      endSourceChar: 302
-      line: 12
+      startSourceChar: 361
+      endSourceChar: 365
+      line: 14
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 302
-      endSourceChar: 302
-      line: 12
+      startSourceChar: 365
+      endSourceChar: 365
+      line: 14
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 302
-      endSourceChar: 302
-      line: 12
+      startSourceChar: 365
+      endSourceChar: 365
+      line: 14
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 302
-      endSourceChar: 302
-      line: 12
+      startSourceChar: 365
+      endSourceChar: 365
+      line: 14
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 28
       endInstruction: 27
-      startSourceChar: 302
-      endSourceChar: 308
-      line: 12
+      startSourceChar: 365
+      endSourceChar: 371
+      line: 14
       lineChar: 12
       spanCodeSection: other.
     - startInstruction: 28
       endInstruction: 51
-      startSourceChar: 308
-      endSourceChar: 321
-      line: 12
+      startSourceChar: 371
+      endSourceChar: 384
+      line: 14
       lineChar: 18
       spanCodeSection: 'GetType() == '
     - startInstruction: 52
       endInstruction: 51
-      startSourceChar: 321
-      endSourceChar: 328
-      line: 12
+      startSourceChar: 384
+      endSourceChar: 391
+      line: 14
       lineChar: 31
       spanCodeSection: typeof(
     - startInstruction: 52
       endInstruction: 99
-      startSourceChar: 328
-      endSourceChar: 359
-      line: 12
+      startSourceChar: 391
+      endSourceChar: 422
+      line: 14
       lineChar: 38
       spanCodeSection: "CharacterController))\r\n        "
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 359
-      endSourceChar: 374
-      line: 13
+      startSourceChar: 422
+      endSourceChar: 437
+      line: 15
       lineChar: 8
       spanCodeSection: "{\r\n            "
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 374
-      endSourceChar: 374
-      line: 14
+      startSourceChar: 437
+      endSourceChar: 437
+      line: 16
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 374
-      endSourceChar: 374
-      line: 14
+      startSourceChar: 437
+      endSourceChar: 437
+      line: 16
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 374
-      endSourceChar: 374
-      line: 14
+      startSourceChar: 437
+      endSourceChar: 437
+      line: 16
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 374
-      endSourceChar: 374
-      line: 14
+      startSourceChar: 437
+      endSourceChar: 437
+      line: 16
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 374
-      endSourceChar: 385
-      line: 14
+      startSourceChar: 437
+      endSourceChar: 448
+      line: 16
       lineChar: 12
       spanCodeSection: Networking.
     - startInstruction: 100
       endInstruction: 99
-      startSourceChar: 385
-      endSourceChar: 397
-      line: 14
+      startSourceChar: 448
+      endSourceChar: 460
+      line: 16
       lineChar: 23
       spanCodeSection: LocalPlayer.
     - startInstruction: 100
       endInstruction: 115
-      startSourceChar: 397
-      endSourceChar: 410
-      line: 14
+      startSourceChar: 460
+      endSourceChar: 473
+      line: 16
       lineChar: 35
       spanCodeSection: SetPlayerTag(
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 410
-      endSourceChar: 410
-      line: 14
+      startSourceChar: 473
+      endSourceChar: 473
+      line: 16
       lineChar: 48
       spanCodeSection: 
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 410
-      endSourceChar: 422
-      line: 14
+      startSourceChar: 473
+      endSourceChar: 485
+      line: 16
       lineChar: 48
       spanCodeSection: udonPhysics.
     - startInstruction: 116
       endInstruction: 167
-      startSourceChar: 422
-      endSourceChar: 437
-      line: 14
+      startSourceChar: 485
+      endSourceChar: 500
+      line: 16
       lineChar: 60
       spanCodeSection: 'volumeTagName, '
     - startInstruction: 168
-      endInstruction: 219
-      startSourceChar: 437
-      endSourceChar: 471
-      line: 14
+      endInstruction: 199
+      startSourceChar: 500
+      endSourceChar: 522
+      line: 16
       lineChar: 75
-      spanCodeSection: "\"swim\");\r\n        }\r\n    }\r\n\r\n    "
-    - startInstruction: 220
-      endInstruction: 219
-      startSourceChar: 471
-      endSourceChar: 498
-      line: 18
+      spanCodeSection: "\"swim\");\r\n            "
+    - startInstruction: 200
+      endInstruction: 199
+      startSourceChar: 522
+      endSourceChar: 522
+      line: 17
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 200
+      endInstruction: 199
+      startSourceChar: 522
+      endSourceChar: 522
+      line: 17
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 200
+      endInstruction: 199
+      startSourceChar: 522
+      endSourceChar: 522
+      line: 17
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 200
+      endInstruction: 199
+      startSourceChar: 522
+      endSourceChar: 534
+      line: 17
+      lineChar: 12
+      spanCodeSection: udonPhysics.
+    - startInstruction: 200
+      endInstruction: 199
+      startSourceChar: 534
+      endSourceChar: 541
+      line: 17
+      lineChar: 24
+      spanCodeSection: 'drag = '
+    - startInstruction: 200
+      endInstruction: 251
+      startSourceChar: 541
+      endSourceChar: 572
+      line: 17
+      lineChar: 31
+      spanCodeSection: "drag;\r\n        }\r\n    }\r\n\r\n    "
+    - startInstruction: 252
+      endInstruction: 251
+      startSourceChar: 572
+      endSourceChar: 599
+      line: 21
       lineChar: 4
       spanCodeSection: private void OnTriggerStay(
-    - startInstruction: 220
-      endInstruction: 247
-      startSourceChar: 498
-      endSourceChar: 519
-      line: 18
+    - startInstruction: 252
+      endInstruction: 279
+      startSourceChar: 599
+      endSourceChar: 620
+      line: 21
       lineChar: 31
       spanCodeSection: "Collider other)\r\n    "
-    - startInstruction: 248
-      endInstruction: 247
-      startSourceChar: 519
-      endSourceChar: 530
-      line: 19
+    - startInstruction: 280
+      endInstruction: 279
+      startSourceChar: 620
+      endSourceChar: 631
+      line: 22
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 248
-      endInstruction: 247
-      startSourceChar: 530
-      endSourceChar: 534
-      line: 20
+    - startInstruction: 280
+      endInstruction: 279
+      startSourceChar: 631
+      endSourceChar: 635
+      line: 23
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 248
-      endInstruction: 247
-      startSourceChar: 534
-      endSourceChar: 534
-      line: 20
+    - startInstruction: 280
+      endInstruction: 279
+      startSourceChar: 635
+      endSourceChar: 635
+      line: 23
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 248
-      endInstruction: 247
-      startSourceChar: 534
-      endSourceChar: 534
-      line: 20
+    - startInstruction: 280
+      endInstruction: 279
+      startSourceChar: 635
+      endSourceChar: 635
+      line: 23
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 248
-      endInstruction: 247
-      startSourceChar: 534
-      endSourceChar: 534
-      line: 20
+    - startInstruction: 280
+      endInstruction: 279
+      startSourceChar: 635
+      endSourceChar: 635
+      line: 23
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 248
-      endInstruction: 247
-      startSourceChar: 534
-      endSourceChar: 540
-      line: 20
+    - startInstruction: 280
+      endInstruction: 279
+      startSourceChar: 635
+      endSourceChar: 641
+      line: 23
       lineChar: 12
       spanCodeSection: other.
-    - startInstruction: 248
-      endInstruction: 271
-      startSourceChar: 540
-      endSourceChar: 553
-      line: 20
+    - startInstruction: 280
+      endInstruction: 303
+      startSourceChar: 641
+      endSourceChar: 654
+      line: 23
       lineChar: 18
       spanCodeSection: 'GetType() == '
-    - startInstruction: 272
-      endInstruction: 271
-      startSourceChar: 553
-      endSourceChar: 560
-      line: 20
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 654
+      endSourceChar: 661
+      line: 23
       lineChar: 31
       spanCodeSection: typeof(
-    - startInstruction: 272
-      endInstruction: 319
-      startSourceChar: 560
-      endSourceChar: 586
-      line: 20
+    - startInstruction: 304
+      endInstruction: 351
+      startSourceChar: 661
+      endSourceChar: 687
+      line: 23
       lineChar: 38
       spanCodeSection: "SphereCollider))\r\n        "
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 586
-      endSourceChar: 601
-      line: 21
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 687
+      endSourceChar: 702
+      line: 24
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 601
-      endSourceChar: 601
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 702
+      endSourceChar: 702
+      line: 25
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 601
-      endSourceChar: 601
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 702
+      endSourceChar: 702
+      line: 25
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 601
-      endSourceChar: 612
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 702
+      endSourceChar: 713
+      line: 25
       lineChar: 12
       spanCodeSection: 'var radius '
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 612
-      endSourceChar: 614
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 713
+      endSourceChar: 715
+      line: 25
       lineChar: 23
       spanCodeSection: '= '
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 614
-      endSourceChar: 614
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 715
+      endSourceChar: 715
+      line: 25
       lineChar: 25
       spanCodeSection: 
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 614
-      endSourceChar: 614
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 715
+      endSourceChar: 715
+      line: 25
       lineChar: 25
       spanCodeSection: 
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 614
-      endSourceChar: 614
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 715
+      endSourceChar: 715
+      line: 25
       lineChar: 25
       spanCodeSection: 
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 614
-      endSourceChar: 620
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 715
+      endSourceChar: 721
+      line: 25
       lineChar: 25
       spanCodeSection: other.
-    - startInstruction: 320
-      endInstruction: 319
-      startSourceChar: 620
-      endSourceChar: 627
-      line: 22
+    - startInstruction: 352
+      endInstruction: 351
+      startSourceChar: 721
+      endSourceChar: 728
+      line: 25
       lineChar: 31
       spanCodeSection: bounds.
-    - startInstruction: 320
-      endInstruction: 343
-      startSourceChar: 627
-      endSourceChar: 635
-      line: 22
+    - startInstruction: 352
+      endInstruction: 375
+      startSourceChar: 728
+      endSourceChar: 736
+      line: 25
       lineChar: 38
       spanCodeSection: extents.
-    - startInstruction: 344
-      endInstruction: 411
-      startSourceChar: 635
-      endSourceChar: 651
-      line: 22
+    - startInstruction: 376
+      endInstruction: 443
+      startSourceChar: 736
+      endSourceChar: 752
+      line: 25
       lineChar: 46
       spanCodeSection: "y;\r\n            "
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 651
-      endSourceChar: 651
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 752
+      endSourceChar: 752
+      line: 26
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 651
-      endSourceChar: 651
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 752
+      endSourceChar: 752
+      line: 26
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 651
-      endSourceChar: 657
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 752
+      endSourceChar: 758
+      line: 26
       lineChar: 12
       spanCodeSection: 'var t '
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 657
-      endSourceChar: 659
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 758
+      endSourceChar: 760
+      line: 26
       lineChar: 18
       spanCodeSection: '= '
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 659
-      endSourceChar: 659
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 760
+      endSourceChar: 760
+      line: 26
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 659
-      endSourceChar: 659
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 760
+      endSourceChar: 760
+      line: 26
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 659
-      endSourceChar: 665
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 760
+      endSourceChar: 766
+      line: 26
       lineChar: 20
       spanCodeSection: Mathf.
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 665
-      endSourceChar: 671
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 766
+      endSourceChar: 772
+      line: 26
       lineChar: 26
       spanCodeSection: Clamp(
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 671
-      endSourceChar: 671
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 772
+      endSourceChar: 772
+      line: 26
       lineChar: 32
       spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 671
-      endSourceChar: 671
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 772
+      endSourceChar: 772
+      line: 26
       lineChar: 32
       spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 671
-      endSourceChar: 671
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 772
+      endSourceChar: 772
+      line: 26
       lineChar: 32
       spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 671
-      endSourceChar: 671
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 772
+      endSourceChar: 772
+      line: 26
       lineChar: 32
       spanCodeSection: 
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 671
-      endSourceChar: 685
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 772
+      endSourceChar: 786
+      line: 26
       lineChar: 32
       spanCodeSection: waterCollider.
-    - startInstruction: 412
-      endInstruction: 411
-      startSourceChar: 685
-      endSourceChar: 692
-      line: 23
+    - startInstruction: 444
+      endInstruction: 443
+      startSourceChar: 786
+      endSourceChar: 793
+      line: 26
       lineChar: 46
       spanCodeSection: bounds.
-    - startInstruction: 412
-      endInstruction: 435
-      startSourceChar: 692
-      endSourceChar: 696
-      line: 23
+    - startInstruction: 444
+      endInstruction: 467
+      startSourceChar: 793
+      endSourceChar: 797
+      line: 26
       lineChar: 53
       spanCodeSection: max.
-    - startInstruction: 436
-      endInstruction: 483
-      startSourceChar: 696
-      endSourceChar: 700
-      line: 23
+    - startInstruction: 468
+      endInstruction: 515
+      startSourceChar: 797
+      endSourceChar: 801
+      line: 26
       lineChar: 57
       spanCodeSection: 'y - '
-    - startInstruction: 484
-      endInstruction: 483
-      startSourceChar: 700
-      endSourceChar: 700
-      line: 23
+    - startInstruction: 516
+      endInstruction: 515
+      startSourceChar: 801
+      endSourceChar: 801
+      line: 26
       lineChar: 61
       spanCodeSection: 
-    - startInstruction: 484
-      endInstruction: 483
-      startSourceChar: 700
-      endSourceChar: 700
-      line: 23
+    - startInstruction: 516
+      endInstruction: 515
+      startSourceChar: 801
+      endSourceChar: 801
+      line: 26
       lineChar: 61
       spanCodeSection: 
-    - startInstruction: 484
-      endInstruction: 483
-      startSourceChar: 700
-      endSourceChar: 700
-      line: 23
+    - startInstruction: 516
+      endInstruction: 515
+      startSourceChar: 801
+      endSourceChar: 801
+      line: 26
       lineChar: 61
       spanCodeSection: 
-    - startInstruction: 484
-      endInstruction: 483
-      startSourceChar: 700
-      endSourceChar: 706
-      line: 23
+    - startInstruction: 516
+      endInstruction: 515
+      startSourceChar: 801
+      endSourceChar: 807
+      line: 26
       lineChar: 61
       spanCodeSection: other.
-    - startInstruction: 484
-      endInstruction: 483
-      startSourceChar: 706
-      endSourceChar: 713
-      line: 23
+    - startInstruction: 516
+      endInstruction: 515
+      startSourceChar: 807
+      endSourceChar: 814
+      line: 26
       lineChar: 67
       spanCodeSection: bounds.
-    - startInstruction: 484
-      endInstruction: 507
-      startSourceChar: 713
-      endSourceChar: 720
-      line: 23
+    - startInstruction: 516
+      endInstruction: 539
+      startSourceChar: 814
+      endSourceChar: 821
+      line: 26
       lineChar: 74
       spanCodeSection: center.
-    - startInstruction: 508
-      endInstruction: 587
-      startSourceChar: 720
-      endSourceChar: 723
-      line: 23
+    - startInstruction: 540
+      endInstruction: 619
+      startSourceChar: 821
+      endSourceChar: 824
+      line: 26
       lineChar: 81
       spanCodeSection: 'y, '
-    - startInstruction: 588
-      endInstruction: 587
-      startSourceChar: 723
-      endSourceChar: 724
-      line: 23
+    - startInstruction: 620
+      endInstruction: 619
+      startSourceChar: 824
+      endSourceChar: 825
+      line: 26
       lineChar: 84
       spanCodeSection: '-'
-    - startInstruction: 588
-      endInstruction: 611
-      startSourceChar: 724
-      endSourceChar: 732
-      line: 23
+    - startInstruction: 620
+      endInstruction: 643
+      startSourceChar: 825
+      endSourceChar: 833
+      line: 26
       lineChar: 85
       spanCodeSection: 'radius, '
-    - startInstruction: 612
-      endInstruction: 671
-      startSourceChar: 732
-      endSourceChar: 754
-      line: 23
+    - startInstruction: 644
+      endInstruction: 703
+      startSourceChar: 833
+      endSourceChar: 855
+      line: 26
       lineChar: 93
       spanCodeSection: "radius);\r\n            "
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 754
-      endSourceChar: 754
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 855
+      endSourceChar: 855
+      line: 27
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 754
-      endSourceChar: 754
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 855
+      endSourceChar: 855
+      line: 27
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 754
-      endSourceChar: 760
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 855
+      endSourceChar: 861
+      line: 27
       lineChar: 12
       spanCodeSection: 'var v '
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 760
-      endSourceChar: 762
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 861
+      endSourceChar: 863
+      line: 27
       lineChar: 18
       spanCodeSection: '= '
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 762
-      endSourceChar: 762
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 863
+      endSourceChar: 863
+      line: 27
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 762
-      endSourceChar: 762
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 863
+      endSourceChar: 863
+      line: 27
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 762
-      endSourceChar: 762
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 863
+      endSourceChar: 863
+      line: 27
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 762
-      endSourceChar: 762
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 863
+      endSourceChar: 863
+      line: 27
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 762
-      endSourceChar: 762
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 863
+      endSourceChar: 863
+      line: 27
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 672
-      endInstruction: 671
-      startSourceChar: 762
-      endSourceChar: 763
-      line: 24
+    - startInstruction: 704
+      endInstruction: 703
+      startSourceChar: 863
+      endSourceChar: 864
+      line: 27
       lineChar: 20
       spanCodeSection: '-'
-    - startInstruction: 672
-      endInstruction: 695
-      startSourceChar: 763
-      endSourceChar: 767
-      line: 24
-      lineChar: 21
-      spanCodeSection: 't * '
-    - startInstruction: 696
+    - startInstruction: 704
       endInstruction: 727
-      startSourceChar: 767
-      endSourceChar: 771
-      line: 24
-      lineChar: 25
+      startSourceChar: 864
+      endSourceChar: 868
+      line: 27
+      lineChar: 21
       spanCodeSection: 't * '
     - startInstruction: 728
       endInstruction: 759
-      startSourceChar: 771
-      endSourceChar: 775
-      line: 24
-      lineChar: 29
-      spanCodeSection: 't / '
+      startSourceChar: 868
+      endSourceChar: 872
+      line: 27
+      lineChar: 25
+      spanCodeSection: 't * '
     - startInstruction: 760
       endInstruction: 791
-      startSourceChar: 775
-      endSourceChar: 780
-      line: 24
-      lineChar: 33
-      spanCodeSection: '3f + '
-    - startInstruction: 792
-      endInstruction: 791
-      startSourceChar: 780
-      endSourceChar: 780
-      line: 24
-      lineChar: 38
-      spanCodeSection: 
-    - startInstruction: 792
-      endInstruction: 791
-      startSourceChar: 780
-      endSourceChar: 780
-      line: 24
-      lineChar: 38
-      spanCodeSection: 
-    - startInstruction: 792
-      endInstruction: 791
-      startSourceChar: 780
-      endSourceChar: 789
-      line: 24
-      lineChar: 38
-      spanCodeSection: 'radius * '
+      startSourceChar: 872
+      endSourceChar: 876
+      line: 27
+      lineChar: 29
+      spanCodeSection: 't / '
     - startInstruction: 792
       endInstruction: 823
-      startSourceChar: 789
-      endSourceChar: 798
-      line: 24
-      lineChar: 47
+      startSourceChar: 876
+      endSourceChar: 881
+      line: 27
+      lineChar: 33
+      spanCodeSection: '3f + '
+    - startInstruction: 824
+      endInstruction: 823
+      startSourceChar: 881
+      endSourceChar: 881
+      line: 27
+      lineChar: 38
+      spanCodeSection: 
+    - startInstruction: 824
+      endInstruction: 823
+      startSourceChar: 881
+      endSourceChar: 881
+      line: 27
+      lineChar: 38
+      spanCodeSection: 
+    - startInstruction: 824
+      endInstruction: 823
+      startSourceChar: 881
+      endSourceChar: 890
+      line: 27
+      lineChar: 38
       spanCodeSection: 'radius * '
     - startInstruction: 824
-      endInstruction: 887
-      startSourceChar: 798
-      endSourceChar: 802
-      line: 24
+      endInstruction: 855
+      startSourceChar: 890
+      endSourceChar: 899
+      line: 27
+      lineChar: 47
+      spanCodeSection: 'radius * '
+    - startInstruction: 856
+      endInstruction: 919
+      startSourceChar: 899
+      endSourceChar: 903
+      line: 27
       lineChar: 56
       spanCodeSection: 't + '
-    - startInstruction: 888
-      endInstruction: 887
-      startSourceChar: 802
-      endSourceChar: 802
-      line: 24
-      lineChar: 60
-      spanCodeSection: 
-    - startInstruction: 888
-      endInstruction: 887
-      startSourceChar: 802
-      endSourceChar: 802
-      line: 24
-      lineChar: 60
-      spanCodeSection: 
-    - startInstruction: 888
-      endInstruction: 887
-      startSourceChar: 802
-      endSourceChar: 802
-      line: 24
-      lineChar: 60
-      spanCodeSection: 
-    - startInstruction: 888
-      endInstruction: 887
-      startSourceChar: 802
-      endSourceChar: 802
-      line: 24
-      lineChar: 60
-      spanCodeSection: 
-    - startInstruction: 888
-      endInstruction: 887
-      startSourceChar: 802
-      endSourceChar: 811
-      line: 24
-      lineChar: 60
-      spanCodeSection: 'radius * '
-    - startInstruction: 888
+    - startInstruction: 920
       endInstruction: 919
-      startSourceChar: 811
-      endSourceChar: 820
-      line: 24
-      lineChar: 69
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 27
+      lineChar: 60
+      spanCodeSection: 
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 27
+      lineChar: 60
+      spanCodeSection: 
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 27
+      lineChar: 60
+      spanCodeSection: 
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 27
+      lineChar: 60
+      spanCodeSection: 
+    - startInstruction: 920
+      endInstruction: 919
+      startSourceChar: 903
+      endSourceChar: 912
+      line: 27
+      lineChar: 60
       spanCodeSection: 'radius * '
     - startInstruction: 920
       endInstruction: 951
-      startSourceChar: 820
-      endSourceChar: 829
-      line: 24
-      lineChar: 78
+      startSourceChar: 912
+      endSourceChar: 921
+      line: 27
+      lineChar: 69
       spanCodeSection: 'radius * '
     - startInstruction: 952
       endInstruction: 983
-      startSourceChar: 829
-      endSourceChar: 834
-      line: 24
+      startSourceChar: 921
+      endSourceChar: 930
+      line: 27
+      lineChar: 78
+      spanCodeSection: 'radius * '
+    - startInstruction: 984
+      endInstruction: 1015
+      startSourceChar: 930
+      endSourceChar: 935
+      line: 27
       lineChar: 87
       spanCodeSection: '2f / '
-    - startInstruction: 984
-      endInstruction: 1067
-      startSourceChar: 834
-      endSourceChar: 871
-      line: 24
+    - startInstruction: 1016
+      endInstruction: 1099
+      startSourceChar: 935
+      endSourceChar: 972
+      line: 27
       lineChar: 92
       spanCodeSection: "3f; // Volume of sphere\r\n            "
-    - startInstruction: 1068
-      endInstruction: 1067
-      startSourceChar: 871
-      endSourceChar: 871
-      line: 25
+    - startInstruction: 1100
+      endInstruction: 1099
+      startSourceChar: 972
+      endSourceChar: 972
+      line: 28
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1068
-      endInstruction: 1067
-      startSourceChar: 871
-      endSourceChar: 871
-      line: 25
+    - startInstruction: 1100
+      endInstruction: 1099
+      startSourceChar: 972
+      endSourceChar: 972
+      line: 28
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1068
-      endInstruction: 1067
-      startSourceChar: 871
-      endSourceChar: 877
-      line: 25
+    - startInstruction: 1100
+      endInstruction: 1099
+      startSourceChar: 972
+      endSourceChar: 978
+      line: 28
       lineChar: 12
       spanCodeSection: 'var r '
-    - startInstruction: 1068
-      endInstruction: 1067
-      startSourceChar: 877
-      endSourceChar: 879
-      line: 25
+    - startInstruction: 1100
+      endInstruction: 1099
+      startSourceChar: 978
+      endSourceChar: 980
+      line: 28
       lineChar: 18
       spanCodeSection: '= '
-    - startInstruction: 1068
-      endInstruction: 1067
-      startSourceChar: 879
-      endSourceChar: 879
-      line: 25
+    - startInstruction: 1100
+      endInstruction: 1099
+      startSourceChar: 980
+      endSourceChar: 980
+      line: 28
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 1068
-      endInstruction: 1067
-      startSourceChar: 879
-      endSourceChar: 885
-      line: 25
+    - startInstruction: 1100
+      endInstruction: 1099
+      startSourceChar: 980
+      endSourceChar: 986
+      line: 28
       lineChar: 20
       spanCodeSection: other.
-    - startInstruction: 1068
-      endInstruction: 1111
-      startSourceChar: 885
-      endSourceChar: 917
-      line: 25
+    - startInstruction: 1100
+      endInstruction: 1143
+      startSourceChar: 986
+      endSourceChar: 1018
+      line: 28
       lineChar: 26
       spanCodeSection: "attachedRigidbody;\r\n            "
-    - startInstruction: 1112
-      endInstruction: 1111
-      startSourceChar: 917
-      endSourceChar: 917
-      line: 26
+    - startInstruction: 1144
+      endInstruction: 1143
+      startSourceChar: 1018
+      endSourceChar: 1018
+      line: 29
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1112
-      endInstruction: 1111
-      startSourceChar: 917
-      endSourceChar: 917
-      line: 26
+    - startInstruction: 1144
+      endInstruction: 1143
+      startSourceChar: 1018
+      endSourceChar: 1018
+      line: 29
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1112
-      endInstruction: 1111
-      startSourceChar: 917
-      endSourceChar: 917
-      line: 26
+    - startInstruction: 1144
+      endInstruction: 1143
+      startSourceChar: 1018
+      endSourceChar: 1018
+      line: 29
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1112
-      endInstruction: 1111
-      startSourceChar: 917
-      endSourceChar: 919
-      line: 26
+    - startInstruction: 1144
+      endInstruction: 1143
+      startSourceChar: 1018
+      endSourceChar: 1020
+      line: 29
       lineChar: 12
       spanCodeSection: r.
-    - startInstruction: 1112
-      endInstruction: 1111
-      startSourceChar: 919
-      endSourceChar: 926
-      line: 26
+    - startInstruction: 1144
+      endInstruction: 1143
+      startSourceChar: 1020
+      endSourceChar: 1027
+      line: 29
       lineChar: 14
       spanCodeSection: 'drag = '
-    - startInstruction: 1112
-      endInstruction: 1111
-      startSourceChar: 926
-      endSourceChar: 926
-      line: 26
+    - startInstruction: 1144
+      endInstruction: 1167
+      startSourceChar: 1027
+      endSourceChar: 1046
+      line: 29
       lineChar: 21
-      spanCodeSection: 
-    - startInstruction: 1112
-      endInstruction: 1111
-      startSourceChar: 926
-      endSourceChar: 938
-      line: 26
-      lineChar: 21
-      spanCodeSection: udonPhysics.
-    - startInstruction: 1112
-      endInstruction: 1191
-      startSourceChar: 938
-      endSourceChar: 961
-      line: 26
-      lineChar: 33
-      spanCodeSection: "swimDrag;\r\n            "
-    - startInstruction: 1192
-      endInstruction: 1191
-      startSourceChar: 961
-      endSourceChar: 961
-      line: 27
+      spanCodeSection: "drag;\r\n            "
+    - startInstruction: 1168
+      endInstruction: 1167
+      startSourceChar: 1046
+      endSourceChar: 1046
+      line: 30
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1192
-      endInstruction: 1191
-      startSourceChar: 961
-      endSourceChar: 961
-      line: 27
+    - startInstruction: 1168
+      endInstruction: 1167
+      startSourceChar: 1046
+      endSourceChar: 1046
+      line: 30
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1192
-      endInstruction: 1191
-      startSourceChar: 961
-      endSourceChar: 961
-      line: 27
+    - startInstruction: 1168
+      endInstruction: 1167
+      startSourceChar: 1046
+      endSourceChar: 1046
+      line: 30
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1192
-      endInstruction: 1191
-      startSourceChar: 961
-      endSourceChar: 963
-      line: 27
+    - startInstruction: 1168
+      endInstruction: 1167
+      startSourceChar: 1046
+      endSourceChar: 1048
+      line: 30
       lineChar: 12
       spanCodeSection: r.
-    - startInstruction: 1192
-      endInstruction: 1191
-      startSourceChar: 963
-      endSourceChar: 977
-      line: 27
+    - startInstruction: 1168
+      endInstruction: 1167
+      startSourceChar: 1048
+      endSourceChar: 1062
+      line: 30
       lineChar: 14
       spanCodeSection: 'angularDrag = '
+    - startInstruction: 1168
+      endInstruction: 1191
+      startSourceChar: 1062
+      endSourceChar: 1088
+      line: 30
+      lineChar: 28
+      spanCodeSection: "angularDrag;\r\n            "
     - startInstruction: 1192
       endInstruction: 1191
-      startSourceChar: 977
-      endSourceChar: 977
-      line: 27
-      lineChar: 28
+      startSourceChar: 1088
+      endSourceChar: 1088
+      line: 31
+      lineChar: 12
       spanCodeSection: 
     - startInstruction: 1192
       endInstruction: 1191
-      startSourceChar: 977
-      endSourceChar: 989
-      line: 27
-      lineChar: 28
-      spanCodeSection: udonPhysics.
+      startSourceChar: 1088
+      endSourceChar: 1088
+      line: 31
+      lineChar: 12
+      spanCodeSection: 
     - startInstruction: 1192
-      endInstruction: 1271
-      startSourceChar: 989
-      endSourceChar: 1019
-      line: 27
-      lineChar: 40
-      spanCodeSection: "swimAngularDrag;\r\n            "
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1019
-      endSourceChar: 1019
-      line: 28
+      endInstruction: 1191
+      startSourceChar: 1088
+      endSourceChar: 1088
+      line: 31
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1019
-      endSourceChar: 1019
-      line: 28
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1019
-      endSourceChar: 1019
-      line: 28
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1019
-      endSourceChar: 1021
-      line: 28
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 1088
+      endSourceChar: 1090
+      line: 31
       lineChar: 12
       spanCodeSection: r.
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1021
-      endSourceChar: 1040
-      line: 28
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 1090
+      endSourceChar: 1109
+      line: 31
       lineChar: 14
       spanCodeSection: AddForceAtPosition(
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1040
-      endSourceChar: 1040
-      line: 28
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 1109
+      endSourceChar: 1109
+      line: 31
       lineChar: 33
       spanCodeSection: 
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1040
-      endSourceChar: 1041
-      line: 28
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 1109
+      endSourceChar: 1110
+      line: 31
       lineChar: 33
       spanCodeSection: '-'
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1041
-      endSourceChar: 1041
-      line: 28
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 1110
+      endSourceChar: 1110
+      line: 31
       lineChar: 34
       spanCodeSection: 
-    - startInstruction: 1272
-      endInstruction: 1271
-      startSourceChar: 1041
-      endSourceChar: 1049
-      line: 28
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 1110
+      endSourceChar: 1118
+      line: 31
       lineChar: 34
       spanCodeSection: Physics.
-    - startInstruction: 1272
-      endInstruction: 1311
-      startSourceChar: 1049
-      endSourceChar: 1059
-      line: 28
+    - startInstruction: 1192
+      endInstruction: 1231
+      startSourceChar: 1118
+      endSourceChar: 1128
+      line: 31
       lineChar: 42
       spanCodeSection: 'gravity * '
-    - startInstruction: 1312
-      endInstruction: 1311
-      startSourceChar: 1059
-      endSourceChar: 1060
-      line: 28
+    - startInstruction: 1232
+      endInstruction: 1231
+      startSourceChar: 1128
+      endSourceChar: 1129
+      line: 31
       lineChar: 52
       spanCodeSection: (
-    - startInstruction: 1312
-      endInstruction: 1311
-      startSourceChar: 1060
-      endSourceChar: 1060
-      line: 28
+    - startInstruction: 1232
+      endInstruction: 1231
+      startSourceChar: 1129
+      endSourceChar: 1129
+      line: 31
       lineChar: 53
       spanCodeSection: 
-    - startInstruction: 1312
-      endInstruction: 1311
-      startSourceChar: 1060
-      endSourceChar: 1064
-      line: 28
+    - startInstruction: 1232
+      endInstruction: 1231
+      startSourceChar: 1129
+      endSourceChar: 1133
+      line: 31
       lineChar: 53
       spanCodeSection: 'v * '
-    - startInstruction: 1312
-      endInstruction: 1375
-      startSourceChar: 1064
-      endSourceChar: 1074
-      line: 28
+    - startInstruction: 1232
+      endInstruction: 1295
+      startSourceChar: 1133
+      endSourceChar: 1143
+      line: 31
       lineChar: 57
       spanCodeSection: 'density), '
-    - startInstruction: 1376
-      endInstruction: 1375
-      startSourceChar: 1074
-      endSourceChar: 1074
-      line: 28
+    - startInstruction: 1296
+      endInstruction: 1295
+      startSourceChar: 1143
+      endSourceChar: 1143
+      line: 31
       lineChar: 67
       spanCodeSection: 
-    - startInstruction: 1376
-      endInstruction: 1375
-      startSourceChar: 1074
-      endSourceChar: 1074
-      line: 28
+    - startInstruction: 1296
+      endInstruction: 1295
+      startSourceChar: 1143
+      endSourceChar: 1143
+      line: 31
       lineChar: 67
       spanCodeSection: 
-    - startInstruction: 1376
-      endInstruction: 1375
-      startSourceChar: 1074
-      endSourceChar: 1080
-      line: 28
+    - startInstruction: 1296
+      endInstruction: 1295
+      startSourceChar: 1143
+      endSourceChar: 1149
+      line: 31
       lineChar: 67
       spanCodeSection: other.
-    - startInstruction: 1376
-      endInstruction: 1375
-      startSourceChar: 1080
-      endSourceChar: 1087
-      line: 28
+    - startInstruction: 1296
+      endInstruction: 1295
+      startSourceChar: 1149
+      endSourceChar: 1156
+      line: 31
       lineChar: 73
       spanCodeSection: bounds.
-    - startInstruction: 1376
-      endInstruction: 1475
-      startSourceChar: 1087
-      endSourceChar: 1121
-      line: 28
+    - startInstruction: 1296
+      endInstruction: 1395
+      startSourceChar: 1156
+      endSourceChar: 1190
+      line: 31
       lineChar: 80
       spanCodeSection: "center);\r\n        }\r\n    }\r\n\r\n    "
-    - startInstruction: 1476
-      endInstruction: 1475
-      startSourceChar: 1121
-      endSourceChar: 1148
-      line: 32
+    - startInstruction: 1396
+      endInstruction: 1395
+      startSourceChar: 1190
+      endSourceChar: 1217
+      line: 35
       lineChar: 4
       spanCodeSection: private void OnTriggerExit(
-    - startInstruction: 1476
-      endInstruction: 1503
-      startSourceChar: 1148
-      endSourceChar: 1169
-      line: 32
+    - startInstruction: 1396
+      endInstruction: 1423
+      startSourceChar: 1217
+      endSourceChar: 1238
+      line: 35
       lineChar: 31
       spanCodeSection: "Collider other)\r\n    "
-    - startInstruction: 1504
-      endInstruction: 1503
-      startSourceChar: 1169
-      endSourceChar: 1180
-      line: 33
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1238
+      endSourceChar: 1249
+      line: 36
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 1504
-      endInstruction: 1503
-      startSourceChar: 1180
-      endSourceChar: 1180
-      line: 34
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1249
+      endSourceChar: 1249
+      line: 37
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 1504
-      endInstruction: 1503
-      startSourceChar: 1180
-      endSourceChar: 1180
-      line: 34
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1249
+      endSourceChar: 1249
+      line: 37
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 1504
-      endInstruction: 1503
-      startSourceChar: 1180
-      endSourceChar: 1189
-      line: 34
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1249
+      endSourceChar: 1258
+      line: 37
       lineChar: 8
       spanCodeSection: 'var type '
-    - startInstruction: 1504
-      endInstruction: 1503
-      startSourceChar: 1189
-      endSourceChar: 1191
-      line: 34
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1258
+      endSourceChar: 1260
+      line: 37
       lineChar: 17
       spanCodeSection: '= '
-    - startInstruction: 1504
-      endInstruction: 1503
-      startSourceChar: 1191
-      endSourceChar: 1191
-      line: 34
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1260
+      endSourceChar: 1260
+      line: 37
       lineChar: 19
       spanCodeSection: 
-    - startInstruction: 1504
-      endInstruction: 1503
-      startSourceChar: 1191
-      endSourceChar: 1191
-      line: 34
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1260
+      endSourceChar: 1260
+      line: 37
       lineChar: 19
       spanCodeSection: 
-    - startInstruction: 1504
-      endInstruction: 1503
-      startSourceChar: 1191
-      endSourceChar: 1197
-      line: 34
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1260
+      endSourceChar: 1266
+      line: 37
       lineChar: 19
       spanCodeSection: other.
-    - startInstruction: 1504
-      endInstruction: 1547
-      startSourceChar: 1197
-      endSourceChar: 1217
-      line: 34
+    - startInstruction: 1424
+      endInstruction: 1467
+      startSourceChar: 1266
+      endSourceChar: 1286
+      line: 37
       lineChar: 25
       spanCodeSection: "GetType();\r\n        "
-    - startInstruction: 1548
-      endInstruction: 1547
-      startSourceChar: 1217
-      endSourceChar: 1221
-      line: 35
+    - startInstruction: 1468
+      endInstruction: 1467
+      startSourceChar: 1286
+      endSourceChar: 1290
+      line: 38
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 1548
-      endInstruction: 1547
-      startSourceChar: 1221
-      endSourceChar: 1221
-      line: 35
+    - startInstruction: 1468
+      endInstruction: 1467
+      startSourceChar: 1290
+      endSourceChar: 1290
+      line: 38
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1548
-      endInstruction: 1547
-      startSourceChar: 1221
-      endSourceChar: 1229
-      line: 35
+    - startInstruction: 1468
+      endInstruction: 1467
+      startSourceChar: 1290
+      endSourceChar: 1298
+      line: 38
       lineChar: 12
       spanCodeSection: 'type == '
-    - startInstruction: 1548
-      endInstruction: 1547
-      startSourceChar: 1229
-      endSourceChar: 1236
-      line: 35
+    - startInstruction: 1468
+      endInstruction: 1467
+      startSourceChar: 1298
+      endSourceChar: 1305
+      line: 38
       lineChar: 20
       spanCodeSection: typeof(
-    - startInstruction: 1548
-      endInstruction: 1595
-      startSourceChar: 1236
-      endSourceChar: 1262
-      line: 35
+    - startInstruction: 1468
+      endInstruction: 1515
+      startSourceChar: 1305
+      endSourceChar: 1331
+      line: 38
       lineChar: 27
       spanCodeSection: "SphereCollider))\r\n        "
-    - startInstruction: 1596
-      endInstruction: 1595
-      startSourceChar: 1262
-      endSourceChar: 1277
-      line: 36
+    - startInstruction: 1516
+      endInstruction: 1515
+      startSourceChar: 1331
+      endSourceChar: 1346
+      line: 39
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 1596
-      endInstruction: 1595
-      startSourceChar: 1277
-      endSourceChar: 1277
-      line: 37
+    - startInstruction: 1516
+      endInstruction: 1515
+      startSourceChar: 1346
+      endSourceChar: 1346
+      line: 40
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1596
-      endInstruction: 1595
-      startSourceChar: 1277
-      endSourceChar: 1277
-      line: 37
+    - startInstruction: 1516
+      endInstruction: 1515
+      startSourceChar: 1346
+      endSourceChar: 1346
+      line: 40
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1596
-      endInstruction: 1595
-      startSourceChar: 1277
-      endSourceChar: 1283
-      line: 37
+    - startInstruction: 1516
+      endInstruction: 1515
+      startSourceChar: 1346
+      endSourceChar: 1352
+      line: 40
       lineChar: 12
       spanCodeSection: 'var r '
-    - startInstruction: 1596
-      endInstruction: 1595
-      startSourceChar: 1283
-      endSourceChar: 1285
-      line: 37
+    - startInstruction: 1516
+      endInstruction: 1515
+      startSourceChar: 1352
+      endSourceChar: 1354
+      line: 40
       lineChar: 18
       spanCodeSection: '= '
-    - startInstruction: 1596
-      endInstruction: 1595
-      startSourceChar: 1285
-      endSourceChar: 1285
-      line: 37
+    - startInstruction: 1516
+      endInstruction: 1515
+      startSourceChar: 1354
+      endSourceChar: 1354
+      line: 40
       lineChar: 20
       spanCodeSection: 
-    - startInstruction: 1596
-      endInstruction: 1595
-      startSourceChar: 1285
-      endSourceChar: 1291
-      line: 37
+    - startInstruction: 1516
+      endInstruction: 1515
+      startSourceChar: 1354
+      endSourceChar: 1360
+      line: 40
       lineChar: 20
       spanCodeSection: other.
-    - startInstruction: 1596
-      endInstruction: 1639
-      startSourceChar: 1291
-      endSourceChar: 1323
-      line: 37
+    - startInstruction: 1516
+      endInstruction: 1559
+      startSourceChar: 1360
+      endSourceChar: 1392
+      line: 40
       lineChar: 26
       spanCodeSection: "attachedRigidbody;\r\n            "
-    - startInstruction: 1640
-      endInstruction: 1639
-      startSourceChar: 1323
-      endSourceChar: 1323
-      line: 38
+    - startInstruction: 1560
+      endInstruction: 1559
+      startSourceChar: 1392
+      endSourceChar: 1392
+      line: 41
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1640
-      endInstruction: 1639
-      startSourceChar: 1323
-      endSourceChar: 1323
-      line: 38
+    - startInstruction: 1560
+      endInstruction: 1559
+      startSourceChar: 1392
+      endSourceChar: 1392
+      line: 41
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1640
-      endInstruction: 1639
-      startSourceChar: 1323
-      endSourceChar: 1323
-      line: 38
+    - startInstruction: 1560
+      endInstruction: 1559
+      startSourceChar: 1392
+      endSourceChar: 1392
+      line: 41
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1640
-      endInstruction: 1639
-      startSourceChar: 1323
-      endSourceChar: 1325
-      line: 38
+    - startInstruction: 1560
+      endInstruction: 1559
+      startSourceChar: 1392
+      endSourceChar: 1394
+      line: 41
       lineChar: 12
       spanCodeSection: r.
-    - startInstruction: 1640
-      endInstruction: 1639
-      startSourceChar: 1325
-      endSourceChar: 1332
-      line: 38
+    - startInstruction: 1560
+      endInstruction: 1559
+      startSourceChar: 1394
+      endSourceChar: 1401
+      line: 41
       lineChar: 14
       spanCodeSection: 'drag = '
-    - startInstruction: 1640
-      endInstruction: 1639
-      startSourceChar: 1332
-      endSourceChar: 1332
-      line: 38
+    - startInstruction: 1560
+      endInstruction: 1559
+      startSourceChar: 1401
+      endSourceChar: 1401
+      line: 41
       lineChar: 21
       spanCodeSection: 
-    - startInstruction: 1640
-      endInstruction: 1639
-      startSourceChar: 1332
-      endSourceChar: 1344
-      line: 38
+    - startInstruction: 1560
+      endInstruction: 1559
+      startSourceChar: 1401
+      endSourceChar: 1413
+      line: 41
       lineChar: 21
       spanCodeSection: udonPhysics.
-    - startInstruction: 1640
-      endInstruction: 1719
-      startSourceChar: 1344
-      endSourceChar: 1369
-      line: 38
+    - startInstruction: 1560
+      endInstruction: 1639
+      startSourceChar: 1413
+      endSourceChar: 1438
+      line: 41
       lineChar: 33
       spanCodeSection: "normalDrag;\r\n            "
-    - startInstruction: 1720
-      endInstruction: 1719
-      startSourceChar: 1369
-      endSourceChar: 1369
-      line: 39
+    - startInstruction: 1640
+      endInstruction: 1639
+      startSourceChar: 1438
+      endSourceChar: 1438
+      line: 42
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1720
-      endInstruction: 1719
-      startSourceChar: 1369
-      endSourceChar: 1369
-      line: 39
+    - startInstruction: 1640
+      endInstruction: 1639
+      startSourceChar: 1438
+      endSourceChar: 1438
+      line: 42
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1720
-      endInstruction: 1719
-      startSourceChar: 1369
-      endSourceChar: 1369
-      line: 39
+    - startInstruction: 1640
+      endInstruction: 1639
+      startSourceChar: 1438
+      endSourceChar: 1438
+      line: 42
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1720
-      endInstruction: 1719
-      startSourceChar: 1369
-      endSourceChar: 1371
-      line: 39
+    - startInstruction: 1640
+      endInstruction: 1639
+      startSourceChar: 1438
+      endSourceChar: 1440
+      line: 42
       lineChar: 12
       spanCodeSection: r.
-    - startInstruction: 1720
-      endInstruction: 1719
-      startSourceChar: 1371
-      endSourceChar: 1385
-      line: 39
+    - startInstruction: 1640
+      endInstruction: 1639
+      startSourceChar: 1440
+      endSourceChar: 1454
+      line: 42
       lineChar: 14
       spanCodeSection: 'angularDrag = '
-    - startInstruction: 1720
-      endInstruction: 1719
-      startSourceChar: 1385
-      endSourceChar: 1385
-      line: 39
+    - startInstruction: 1640
+      endInstruction: 1639
+      startSourceChar: 1454
+      endSourceChar: 1454
+      line: 42
       lineChar: 28
       spanCodeSection: 
-    - startInstruction: 1720
-      endInstruction: 1719
-      startSourceChar: 1385
-      endSourceChar: 1397
-      line: 39
+    - startInstruction: 1640
+      endInstruction: 1639
+      startSourceChar: 1454
+      endSourceChar: 1466
+      line: 42
       lineChar: 28
       spanCodeSection: udonPhysics.
-    - startInstruction: 1720
-      endInstruction: 1807
-      startSourceChar: 1397
-      endSourceChar: 1436
-      line: 39
+    - startInstruction: 1640
+      endInstruction: 1727
+      startSourceChar: 1466
+      endSourceChar: 1505
+      line: 42
       lineChar: 40
       spanCodeSection: "normalAngularDrag;\r\n        }\r\n        "
-    - startInstruction: 1808
-      endInstruction: 1807
-      startSourceChar: 1436
-      endSourceChar: 1441
-      line: 41
+    - startInstruction: 1728
+      endInstruction: 1727
+      startSourceChar: 1505
+      endSourceChar: 1510
+      line: 44
       lineChar: 8
       spanCodeSection: 'else '
-    - startInstruction: 1808
-      endInstruction: 1807
-      startSourceChar: 1441
-      endSourceChar: 1445
-      line: 41
+    - startInstruction: 1728
+      endInstruction: 1727
+      startSourceChar: 1510
+      endSourceChar: 1514
+      line: 44
       lineChar: 13
       spanCodeSection: if (
-    - startInstruction: 1808
-      endInstruction: 1807
-      startSourceChar: 1445
-      endSourceChar: 1445
-      line: 41
+    - startInstruction: 1728
+      endInstruction: 1727
+      startSourceChar: 1514
+      endSourceChar: 1514
+      line: 44
       lineChar: 17
       spanCodeSection: 
-    - startInstruction: 1808
-      endInstruction: 1807
-      startSourceChar: 1445
-      endSourceChar: 1453
-      line: 41
+    - startInstruction: 1728
+      endInstruction: 1727
+      startSourceChar: 1514
+      endSourceChar: 1522
+      line: 44
       lineChar: 17
       spanCodeSection: 'type == '
-    - startInstruction: 1808
-      endInstruction: 1807
-      startSourceChar: 1453
-      endSourceChar: 1460
-      line: 41
+    - startInstruction: 1728
+      endInstruction: 1727
+      startSourceChar: 1522
+      endSourceChar: 1529
+      line: 44
       lineChar: 25
       spanCodeSection: typeof(
-    - startInstruction: 1808
-      endInstruction: 1855
-      startSourceChar: 1460
-      endSourceChar: 1491
-      line: 41
+    - startInstruction: 1728
+      endInstruction: 1775
+      startSourceChar: 1529
+      endSourceChar: 1560
+      line: 44
       lineChar: 32
       spanCodeSection: "CharacterController))\r\n        "
-    - startInstruction: 1856
-      endInstruction: 1855
-      startSourceChar: 1491
-      endSourceChar: 1506
-      line: 42
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 1560
+      endSourceChar: 1575
+      line: 45
       lineChar: 8
       spanCodeSection: "{\r\n            "
-    - startInstruction: 1856
-      endInstruction: 1855
-      startSourceChar: 1506
-      endSourceChar: 1506
-      line: 43
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 1575
+      endSourceChar: 1575
+      line: 46
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1856
-      endInstruction: 1855
-      startSourceChar: 1506
-      endSourceChar: 1506
-      line: 43
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 1575
+      endSourceChar: 1575
+      line: 46
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1856
-      endInstruction: 1855
-      startSourceChar: 1506
-      endSourceChar: 1506
-      line: 43
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 1575
+      endSourceChar: 1575
+      line: 46
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1856
-      endInstruction: 1855
-      startSourceChar: 1506
-      endSourceChar: 1506
-      line: 43
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 1575
+      endSourceChar: 1575
+      line: 46
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1856
-      endInstruction: 1855
-      startSourceChar: 1506
-      endSourceChar: 1517
-      line: 43
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 1575
+      endSourceChar: 1586
+      line: 46
       lineChar: 12
       spanCodeSection: Networking.
-    - startInstruction: 1856
-      endInstruction: 1855
-      startSourceChar: 1517
-      endSourceChar: 1529
-      line: 43
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 1586
+      endSourceChar: 1598
+      line: 46
       lineChar: 23
       spanCodeSection: LocalPlayer.
-    - startInstruction: 1856
-      endInstruction: 1871
-      startSourceChar: 1529
-      endSourceChar: 1542
-      line: 43
+    - startInstruction: 1776
+      endInstruction: 1791
+      startSourceChar: 1598
+      endSourceChar: 1611
+      line: 46
       lineChar: 35
       spanCodeSection: SetPlayerTag(
-    - startInstruction: 1872
-      endInstruction: 1871
-      startSourceChar: 1542
-      endSourceChar: 1542
-      line: 43
+    - startInstruction: 1792
+      endInstruction: 1791
+      startSourceChar: 1611
+      endSourceChar: 1611
+      line: 46
       lineChar: 48
       spanCodeSection: 
-    - startInstruction: 1872
-      endInstruction: 1871
-      startSourceChar: 1542
-      endSourceChar: 1554
-      line: 43
+    - startInstruction: 1792
+      endInstruction: 1791
+      startSourceChar: 1611
+      endSourceChar: 1623
+      line: 46
       lineChar: 48
       spanCodeSection: udonPhysics.
-    - startInstruction: 1872
-      endInstruction: 1923
-      startSourceChar: 1554
-      endSourceChar: 1569
-      line: 43
+    - startInstruction: 1792
+      endInstruction: 1843
+      startSourceChar: 1623
+      endSourceChar: 1638
+      line: 46
       lineChar: 60
       spanCodeSection: 'volumeTagName, '
-    - startInstruction: 1924
-      endInstruction: 1924
-      startSourceChar: 1569
-      endSourceChar: 1569
-      line: 43
+    - startInstruction: 1844
+      endInstruction: 1844
+      startSourceChar: 1638
+      endSourceChar: 1638
+      line: 46
       lineChar: 75
       spanCodeSection: 
   hasInteractEvent: 0
@@ -1815,7 +1866,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 5
     - Name: 
       Entry: 7
       Data: 
@@ -1947,7 +1998,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: udonPhysics
+      Data: drag
     - Name: $v
       Entry: 7
       Data: 10|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -1955,8 +2006,122 @@ MonoBehaviour:
       Entry: 7
       Data: 11|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
+      Entry: 9
+      Data: 8
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemSingle
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: drag
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: drag
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
       Entry: 7
-      Data: 12|System.RuntimeType, mscorlib
+      Data: 12|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: angularDrag
+    - Name: $v
+      Entry: 7
+      Data: 13|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 14|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 8
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemSingle
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: angularDrag
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: angularDrag
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 15|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: udonPhysics
+    - Name: $v
+      Entry: 7
+      Data: 16|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 17|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 18|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: UdonPhysicsSystem, Assembly-CSharp
@@ -1986,7 +2151,7 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 13|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 19|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0

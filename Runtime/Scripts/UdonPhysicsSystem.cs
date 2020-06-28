@@ -32,16 +32,13 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
     public float normalDrag = 0;
     public float normalAngularDrag = 0.5f;
 
-    public enum PlayerMode
-    {
-        Standard,
-        AlwaysNormal,
-        AlwaysFly,
-    }
+    private const int PlayerModeStandard = 0;
+    private const int PlayerModeAlwaysNormal = 1;
+    private const int PlayerModeAlwaysFly = 2;
     [Header("Player config")]
-    public PlayerMode playerMode = PlayerMode.Standard;
+    [Tooltip("0: standard, 1: always normal, 2: always fly")]
+    public int playerMode = PlayerModeStandard;
     public float flyDrag = 1;
-    public float flyAngularDrag = 0;
 
     [Header("UdonPhysics config")]
     public string volumeTagName = "UdonPhysics";
@@ -64,13 +61,15 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
             return;
         switch (playerMode)
         {
-            case PlayerMode.Standard:
+            case PlayerModeStandard:
                 DoMode();
                 break;
-            case PlayerMode.AlwaysFly:
+            case PlayerModeAlwaysNormal:
+                // nothing to do
+                break;
+            case PlayerModeAlwaysFly:
                 DoFly();
                 break;
-            // nothing do on AlwaysNormal
         }
         lastVelocity = p.GetVelocity();
     }
