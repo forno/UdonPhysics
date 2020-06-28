@@ -69,8 +69,8 @@ MonoBehaviour:
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # public class
     SimpleBuoyancyVolume : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         #
     public Collider waterCollider;\r\n        \r\n         # public float density
-    = 1000;\r\n        \r\n         # public float drag = 5;\r\n        \r\n         #
-    public float angularDrag = 2;\r\n        \r\n         # public UdonPhysicsSystem
+    = 1000;\r\n        \r\n         # public float drag = 1;\r\n        \r\n         #
+    public float angularDrag = 1;\r\n        \r\n         # public UdonPhysicsSystem
     udonPhysics;\r\n        \r\n         # private void OnTriggerEnter(Collider other)\r\n
     \   .export _onTriggerEnter\r\n        \r\n    _onTriggerEnter:\r\n        \r\n
     \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, onTriggerEnterOther\r\n
@@ -385,7 +385,7 @@ MonoBehaviour:
       endSourceChar: 221
       line: 8
       lineChar: 11
-      spanCodeSection: "float drag = 5;\r\n    "
+      spanCodeSection: "float drag = 1;\r\n    "
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 221
@@ -406,7 +406,7 @@ MonoBehaviour:
       endSourceChar: 256
       line: 9
       lineChar: 11
-      spanCodeSection: "float angularDrag = 2;\r\n    "
+      spanCodeSection: "float angularDrag = 1;\r\n    "
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 256

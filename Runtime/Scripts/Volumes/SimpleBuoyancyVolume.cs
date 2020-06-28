@@ -6,8 +6,8 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
 {
     public Collider waterCollider;
     public float density = 1000;
-    public float drag = 5;
-    public float angularDrag = 2;
+    public float drag = 1;
+    public float angularDrag = 1;
     public UdonPhysicsSystem udonPhysics;
 
     private void OnTriggerEnter(Collider other)
