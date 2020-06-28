@@ -4,11 +4,17 @@ using VRC.SDKBase;
 
 public class SimpleBuoyancyVolume : UdonSharpBehaviour
 {
-    public Collider waterCollider;
     public float density = 1000;
     public float drag = 1;
     public float angularDrag = 1;
     public UdonPhysicsSystem udonPhysics;
+
+    private Collider waterCollider;
+
+    private void Start()
+    {
+        waterCollider = GetComponent<Collider>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
