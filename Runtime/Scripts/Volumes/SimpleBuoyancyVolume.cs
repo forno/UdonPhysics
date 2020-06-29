@@ -33,6 +33,8 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
             var t = Mathf.Clamp(waterCollider.bounds.max.y - other.bounds.center.y, -radius, radius);
             var v = -t * t * t / 3f + radius * radius * t + radius * radius * radius * 2f / 3f; // Volume of sphere
             var r = other.attachedRigidbody;
+            if (r == null)
+                return;
             r.drag = drag;
             r.angularDrag = angularDrag;
             r.AddForceAtPosition(-Physics.gravity * (v * density), other.bounds.center);
