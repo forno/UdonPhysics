@@ -71,7 +71,7 @@ MonoBehaviour:
     \        # using UnityEngine;\r\n        \r\n         # using VRC.SDKBase;\r\n
     \       \r\n         # public class SimpleBuoyancyVolume : UdonSharpBehaviour\r\n.code_start\r\n
     \       \r\n         # public float density = 1000;\r\n        \r\n         #
-    public float drag = 1;\r\n        \r\n         # public float angularDrag = 1;\r\n
+    public float drag = 3;\r\n        \r\n         # public float angularDrag = 1;\r\n
     \       \r\n         # public UdonPhysicsSystem udonPhysics;\r\n        \r\n         #
     private Collider waterCollider;\r\n        \r\n         # private void Start()\r\n
     \   .export _start\r\n        \r\n    _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
@@ -394,7 +394,7 @@ MonoBehaviour:
       endSourceChar: 305
       line: 12
       lineChar: 11
-      spanCodeSection: "float drag = 1;\n    "
+      spanCodeSection: "float drag = 3;\n    "
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 305
