@@ -1,3 +1,8 @@
+/*
+FORNO's Software License v1 (https://github.com/forno/FORNOsSoftwareLicense/blob/v1/LICENSE.md)
+
+Copyright (c) 2020 FORNO
+*/
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -5,7 +10,7 @@ using VRC.SDKBase;
 public class SimpleBuoyancyVolume : UdonSharpBehaviour
 {
     public float density = 1000;
-    public float drag = 1;
+    public float drag = 3;
     public float angularDrag = 1;
     public UdonPhysicsSystem udonPhysics;
 
