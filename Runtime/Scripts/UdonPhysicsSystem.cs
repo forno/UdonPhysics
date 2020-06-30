@@ -85,7 +85,7 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
             AffectDrag();
             return;
         }
-        if (t == "fly") // this condition should be put on last
+        if (t == "fly")
         {
             DoFly();
             return;
