@@ -21,6 +21,7 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
     [Header("Player config")]
     [Tooltip("0: standard, 1: always normal, 2: always fly")]
     public int playerMode = PlayerModeStandard;
+    public VRCPlayerApi.TrackingDataType trackingTarget = VRCPlayerApi.TrackingDataType.Head;
     public float flyDrag = 1;
 
     [Header("UdonPhysics config")]
@@ -32,6 +33,7 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
     private bool isEditor;
     private Vector3 lastVelocity;
     private VRCPlayerApi p;
+    private Vector3 velocity;
 
     private void Start()
     {
@@ -39,34 +41,11 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
         isEditor = p == null;
     }
 
-    private void FixedUpdate()
-    {
-        if (isEditor)
-            return;
-        switch (playerMode)
-        {
-            case PlayerModeStandard:
-                var t = p.GetPlayerTag(volumeTagName);
-                if (t == "swim" || t == "fly")
-                {
-                    AffectDrag();
-                    CancelGravity();
-                }
-                break;
-            case PlayerModeAlwaysNormal:
-                // nothing to do
-                break;
-            case PlayerModeAlwaysFly:
-                AffectDrag();
-                CancelGravity();
-                break;
-        }
-    }
-
     private void Update()
     {
         if (isEditor)
             return;
+        velocity = p.GetVelocity();
         switch (playerMode)
         {
             case PlayerModeStandard:
@@ -79,7 +58,7 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
                 DoFly();
                 break;
         }
-        lastVelocity = p.GetVelocity();
+        lastVelocity = velocity;
     }
 
     private void DoMode()
@@ -100,29 +79,33 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
 
     private void DoFly()
     {
+        CancelGravity();
         Move2Forward();
         Move2UpDownByUserInput();
+        AffectDragAfterCancelGravity();
+        p.SetVelocity(velocity);
     }
 
     public void AffectDrag()
     {
-        var t = 1 - drag * Time.fixedDeltaTime;
-        p.SetVelocity(t * p.GetVelocity());
+        velocity *= 1 - drag * Time.deltaTime;
     }
 
     public void CancelGravity()
     {
-        var g = (p.GetGravityStrength() * Time.fixedDeltaTime) * Physics.gravity;
-        p.SetVelocity(p.GetVelocity() - g);
+        velocity -= (p.GetGravityStrength() * Time.deltaTime) * Physics.gravity;
     }
 
     public void Move2Forward()
     {
-        var dv = p.GetVelocity() - lastVelocity;
-        var h2v = p.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).rotation * Quaternion.Inverse(p.GetRotation()); // horizon to view
+        var dv = velocity - lastVelocity;
+        var trackingData = p.GetTrackingData(trackingTarget);
+        if (trackingData.Equals(null))
+            return;
+        var h2v = trackingData.rotation * Quaternion.Inverse(p.GetRotation()); // horizon to view
         dv = h2v * dv;
-        dv = (p.GetWalkSpeed() * Time.deltaTime * Mathf.Max(drag, 1)) * dv.normalized; // cancel drag effect
-        p.SetVelocity(lastVelocity + dv);
+        dv = ((p.GetWalkSpeed() - 0.1f) * Mathf.Max(drag, 1) * Time.deltaTime) * dv.normalized; // cancel drag effect
+        velocity = lastVelocity + dv;
     }
 
     public void Move2UpDownByUserInput()
@@ -132,11 +115,16 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
         if (!down && !up)
             return;
         var s = p.GetWalkSpeed() * Time.deltaTime * Mathf.Max(drag, 1); // cancel drag effect
-        var v = p.GetVelocity();
         if (down)
-            v += s * Vector3.down;
+            velocity += s * Vector3.down;
         if (up)
-            v += s * Vector3.up;
-        p.SetVelocity(v);
+            velocity += s * Vector3.up;
+    }
+
+    public void AffectDragAfterCancelGravity()
+    {
+        var dragFactor = 1 - drag * Time.deltaTime;
+        var fixed4Gravity = (p.GetGravityStrength() * drag * Time.deltaTime * Time.deltaTime) * Physics.gravity;
+        velocity = dragFactor * velocity - fixed4Gravity;
     }
 }
