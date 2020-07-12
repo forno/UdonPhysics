@@ -12,6 +12,7 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
     public float density = 1000;
     public float drag = 3;
     public float angularDrag = 1;
+    public bool isPlayerEffect = true;
     public UdonPhysicsSystem udonPhysics;
 
     private Collider waterCollider;
@@ -23,7 +24,7 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetType() == typeof(CharacterController))
+        if (isPlayerEffect && other.GetType() == typeof(CharacterController))
         {
             Networking.LocalPlayer.SetPlayerTag(udonPhysics.volumeTagName, "swim");
             udonPhysics.drag = drag;
@@ -55,7 +56,7 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
             r.drag = udonPhysics.normalDrag;
             r.angularDrag = udonPhysics.normalAngularDrag;
         }
-        else if (type == typeof(CharacterController))
+        else if (isPlayerEffect && type == typeof(CharacterController))
         {
             Networking.LocalPlayer.SetPlayerTag(udonPhysics.volumeTagName, "");
         }
