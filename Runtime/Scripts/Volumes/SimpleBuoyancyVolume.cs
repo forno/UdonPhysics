@@ -38,9 +38,15 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
             var r = other.attachedRigidbody;
             if (r == null)
                 return;
-            var radius = other.bounds.extents.y;
-            var t = Mathf.Clamp(waterCollider.bounds.max.y - other.bounds.center.y, -radius, radius);
-            var v = -t * t * t / 3f + radius * radius * t + radius * radius * radius * 2f / 3f; // Volume of sphere
+            var radius = other.bounds.extents.y; // Shpere collider
+            const float overWrap = 1.5f;
+            var top_point = other.bounds.center + (overWrap * radius) * Vector3.up;
+            RaycastHit hit;
+            var t = (waterCollider.Raycast(new Ray(top_point, Vector3.down), out hit, 2 * radius * overWrap) ? Mathf.Clamp(hit.point.y - other.bounds.center.y, -radius, radius) : radius);
+            if (t < -radius || radius < t)
+                Debug.LogWarning("Limitation error on water volume");
+            //var t = Mathf.Clamp(waterCollider.bounds.max.y - other.bounds.center.y, -radius, radius);
+            var v = -t * t * t / 3f + t * radius * radius + radius * radius * radius * 2f / 3f; // Volume of sphere
             r.drag = drag;
             r.angularDrag = angularDrag;
             r.AddForceAtPosition(-Physics.gravity * (v * density), other.bounds.center);
