@@ -15,11 +15,11 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
     public bool isPlayerEffect = true;
     public UdonPhysicsSystem udonPhysics;
 
-    private Collider waterCollider;
+    private Collider volumeCollider;
 
     private void Start()
     {
-        waterCollider = GetComponent<Collider>();
+        volumeCollider = GetComponent<Collider>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -42,10 +42,7 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
             const float overWrap = 1.5f;
             var top_point = other.bounds.center + (overWrap * radius) * Vector3.up;
             RaycastHit hit;
-            var t = (waterCollider.Raycast(new Ray(top_point, Vector3.down), out hit, 2 * radius * overWrap) ? Mathf.Clamp(hit.point.y - other.bounds.center.y, -radius, radius) : radius);
-            if (t < -radius || radius < t)
-                Debug.LogWarning("Limitation error on water volume");
-            //var t = Mathf.Clamp(waterCollider.bounds.max.y - other.bounds.center.y, -radius, radius);
+            var t = (volumeCollider.Raycast(new Ray(top_point, Vector3.down), out hit, 2 * radius * overWrap) ? Mathf.Clamp(hit.point.y - other.bounds.center.y, -radius, radius) : radius);
             var v = -t * t * t / 3f + t * radius * radius + radius * radius * radius * 2f / 3f; // Volume of sphere
             r.drag = drag;
             r.angularDrag = angularDrag;
