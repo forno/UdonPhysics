@@ -104,7 +104,7 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
             return;
         var h2v = trackingData.rotation * Quaternion.Inverse(p.GetRotation()); // horizon to view
         dv = h2v * dv;
-        dv = ((p.GetWalkSpeed() - 0.1f) * Mathf.Max(drag, 1) * Time.deltaTime) * dv.normalized; // cancel drag effect
+        //dv = ((p.GetWalkSpeed() - 0.1f) * Mathf.Max(drag, 1) * Time.deltaTime) * dv.normalized; // cancel drag effect
         velocity = lastVelocity + dv;
     }
 
@@ -124,7 +124,8 @@ public class UdonPhysicsSystem : UdonSharpBehaviour
     public void AffectDragAfterCancelGravity()
     {
         var dragFactor = 1 - drag * Time.deltaTime;
-        var fixed4Gravity = (p.GetGravityStrength() * drag * Time.deltaTime * Time.deltaTime) * Physics.gravity;
-        velocity = dragFactor * velocity - fixed4Gravity;
+        //var fixed4Gravity = (p.GetGravityStrength() * drag * Time.deltaTime * Time.deltaTime) * Physics.gravity;
+        //velocity = dragFactor * velocity - fixed4Gravity;
+        velocity = dragFactor * velocity;
     }
 }

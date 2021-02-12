@@ -22,15 +22,6 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
         volumeCollider = GetComponent<Collider>();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (isPlayerEffect && other.GetType() == typeof(CharacterController))
-        {
-            Networking.LocalPlayer.SetPlayerTag(udonPhysics.volumeTagName, "swim");
-            udonPhysics.drag = drag;
-        }
-    }
-
     private void OnTriggerStay(Collider other)
     {
         if (other.GetType() == typeof(SphereCollider))
@@ -59,9 +50,20 @@ public class SimpleBuoyancyVolume : UdonSharpBehaviour
             r.drag = udonPhysics.normalDrag;
             r.angularDrag = udonPhysics.normalAngularDrag;
         }
-        else if (isPlayerEffect && type == typeof(CharacterController))
+    }
+
+    public override void OnPlayerTriggerEnter(VRCPlayerApi player) {
+        if (isPlayerEffect && player.isLocal)
         {
-            Networking.LocalPlayer.SetPlayerTag(udonPhysics.volumeTagName, "");
+                player.SetPlayerTag(udonPhysics.volumeTagName, "swim");
+                udonPhysics.drag = drag;
+        }
+    }
+
+    public override void OnPlayerTriggerExit(VRCPlayerApi player)
+    {
+        if (isPlayerEffect && player.isLocal) {
+            player.SetPlayerTag(udonPhysics.volumeTagName, "");
         }
     }
 }
